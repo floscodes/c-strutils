@@ -19,9 +19,10 @@ char* strget(string str) {
 }
 
 void strcut(string str, char* del) {
-    char* ptr = strstr(str.chrs, del);
+    char *ptr = strstr(str.chrs, del) + strlen(del);
     if (ptr) {
-        str.chrs = ptr;
+        str.chrs=realloc(str.chrs, sizeof(char)*strlen(ptr));
+        strcpy(str.chrs, ptr);
     }
 }
 

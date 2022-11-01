@@ -8,16 +8,6 @@ int main() {
     strpush(s, "Test1");
     strpush(s, " Test2");
     strcut(s, "1");
-    printf("%s", s);
+    printf("%s", s.chrs);
     return 0;
 }
-
-/*
-    char s[]="Testlauf";
-    char* ptr1 = s;
-    char* ptr2 = &s[4];
-    while (ptr1 != ptr2+1) {
-        printf("\n%s", ptr1);
-        ptr1++;
-    }
-*/
