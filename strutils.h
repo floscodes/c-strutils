@@ -5,7 +5,6 @@ typedef struct {
 } string;
 string strnew();
 void strpush();
-char *strget();
 void strcut();
 void strcutr();
 void strclr();

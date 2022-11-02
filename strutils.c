@@ -14,10 +14,6 @@ void strpush(string dest, char* src) {
     strcat(dest.str, src);
 }
 
-char* strget(string str) {
-    return str.str;
-}
-
 void strcut(string str, char* del) {
     char *ptr = strstr(str.str, del) + strlen(del);
     if (ptr) {
