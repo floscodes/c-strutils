@@ -7,7 +7,8 @@ int main() {
     string s = strnew();
     strpush(s, "Test1");
     strpush(s, " Test2");
+    string s2 = strclone(s);
     strcut(s, "1");
-    printf("%s", s.chrs);
+    printf("%s\n\n%s", s.str, s2.str);
     return 0;
 }
