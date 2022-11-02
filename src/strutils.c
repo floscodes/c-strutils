@@ -43,4 +43,5 @@ void strclr(string str) {
 
 void strfree(string str) {
     free(str.str);
+    str.str = NULL;
 }
