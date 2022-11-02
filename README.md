@@ -3,7 +3,7 @@
 ## First of all:
 
 ```c
-#include "strutils.h"
+#include "strutils.h" // change the path if you palce the files somwhere else
 ```
 
 ## Further usage:
