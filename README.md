@@ -36,7 +36,7 @@ strclr(s); // s is now ""
 
 // at the end, free the memory in the heap
 strfree(s);
-strfree(s2);
+strfree(snew);
 ```
 
 # Have fun! :-)
