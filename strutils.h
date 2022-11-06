@@ -4,6 +4,8 @@ char *strnew();
 void strpush();
 void strcut();
 void strcutr();
+char *strpop();
+char *strpopr();
+void strjoin();
 void strclr();
-void strfree();
 #endif

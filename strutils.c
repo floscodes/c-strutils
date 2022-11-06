@@ -29,6 +29,26 @@ void strcutr(char *str, char* del) {
     }
 }
 
+char *strpop(char *str, char *del) {
+    char *s = strdup(str);
+    strcutr(s, del);
+    strcut(str, del);
+    return s;
+}
+
+char *strpopr(char *str, char *del) {
+    char *s = strdup(str);
+    strcut(s, del);
+    strcutr(str, del);
+    return s;
+}
+
+void strjoin(char *str1, char *str2, char *sep) {
+    str1 = realloc(str1, (sizeof(char)*strlen(str1)) + (sizeof(char)*strlen(sep)) + (sizeof(char)*strlen(str2)+1));
+    strcat(str1, sep);
+    strcat(str1, str2);
+}
+
 void strclr(char *str) {
     str = realloc(str, sizeof(char));
     strcpy(str, "");
