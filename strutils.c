@@ -9,7 +9,7 @@ char *strnew() {
 }
 
 void strpush(char *dest, char* src) {
-    dest=realloc(dest, sizeof(char)*strlen(dest) + sizeof(char)*strlen(src));
+    dest=realloc(dest, sizeof(char)*strlen(dest) + sizeof(char)*strlen(src) + 1);
     strcat(dest, src);
 }
 
@@ -27,20 +27,6 @@ void strcutr(char *str, char* del) {
         *ptr_end='\0';
         str = realloc(str, sizeof(char)*strlen(str)+1);
     }
-}
-
-char *strpop(char *str, char *del) {
-    char *s = strdup(str);
-    strcutr(s, del);
-    strcut(str, del);
-    return s;
-}
-
-char *strpopr(char *str, char *del) {
-    char *s = strdup(str);
-    strcut(s, del);
-    strcutr(str, del);
-    return s;
 }
 
 void strjoin(char *str1, char *str2, char *sep) {
