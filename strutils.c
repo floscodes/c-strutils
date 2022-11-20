@@ -35,6 +35,16 @@ void strjoin(char *str1, char *str2, char *sep) {
     strcat(str1, str2);
 }
 
+void strepl(char *str, char *substr, char *del) {
+    if (strstr(str, substr) != NULL) {
+    char *s = strdup(str);
+    strcutr(str, substr);
+    strcut(s, substr);
+    strjoin(str, s, del);
+    free(s);
+    }
+}
+
 void strclr(char *str) {
     str = realloc(str, sizeof(char));
     strcpy(str, "");

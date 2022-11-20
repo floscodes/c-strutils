@@ -34,6 +34,9 @@ strcutr(snew, " Wor"); // snew is now "Hello"
 // join two strings
 strjoin(s, snew, " "); // s is now "Hello World!"
 
+// replace a substring in a string
+strepl(s, " ", "!"); // s is now "Hello!World!"
+
 // clear a string
 strclr(s); // s is now ""
 

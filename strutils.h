@@ -6,4 +6,5 @@ void strcut();
 void strcutr();
 void strjoin();
 void strclr();
+void strepl();
 #endif
