@@ -8,6 +8,12 @@ char *strnew() {
     return s;
 }
 
+char *strfrom(char *s) {
+    char *str = malloc(sizeof(char)*strlen(s)+1);
+    strcpy(str, s);
+    return str;
+}
+
 void strpush(char *dest, char* src) {
     dest=realloc(dest, sizeof(char)*strlen(dest) + sizeof(char)*strlen(src) + 1);
     strcat(dest, src);

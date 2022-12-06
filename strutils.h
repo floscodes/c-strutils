@@ -1,6 +1,7 @@
 #ifndef DYNSTR_H
 #define DYNSTR_H
 char *strnew();
+char *strfrom();
 void strpush();
 void strcut();
 void strcutr();
